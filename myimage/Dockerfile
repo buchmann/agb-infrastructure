@@ -34,7 +34,7 @@ RUN cd /home
 RUN git clone https://github.com/buchmann/agb-infrastructure.git
 
 # RUN Server 
-RUN python /agb-infrastructure/myimage/myapp/hello.py
+# RUN python /agb-infrastructure/myimage/myapp/hello.py
 
 
 
