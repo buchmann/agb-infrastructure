@@ -24,14 +24,16 @@ RUN pip install --upgrade pip
 # Install Flask
 RUN pip install flask
 
-# Run hello world app
-RUN /usr/bin/python  
  
 # Create App Dir
 RUN cd /home
 
 # Clone Python stuff 
 RUN git clone https://github.com/buchmann/agb-infrastructure.git
+
+ENTRYPOINT ["python"]
+CMD ["app.py"]
+
 
 # RUN Server 
 # RUN python /agb-infrastructure/myimage/myapp/hello.py
